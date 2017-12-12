@@ -1,0 +1,33 @@
+#calc{
+    background-color: black;
+    opacity: .7;
+    text-align: center;
+}
+
+.calcBtn{
+    background-color: lightgrey;
+    opacity: .8;
+    border-radius: 20%;
+}
+
+.calcBtnOp{
+     background-color: black;
+     opacity: .8;
+     border-radius: 20%;
+}
+
+.btn{
+    width: 4em;
+    height: 4em;
+    margin: .2em;
+}
+
+.row{
+    margin: auto;
+}
+
+.btn-block{
+    width: 22em;
+    background-color: lightgrey;
+    margin: auto;
+}
