@@ -1,19 +1,14 @@
 /* global $ */
-var display = [];
+var classname = document.getElementsByClassName("calcNum");
 
-document.getElementById("decimal").addEventListener("click", toDisplay);
+var myFunction = function() {
+    var val = this.value;
+    console.log(val);
+    };
+//    alert(value);
+//};
 
-function toDisplay(){
-        var val = document.getElementsByClassName("calcNum").value;
-        display.push(val);
-        document.getElementById("disp").innerHTML= display;
-        console.log("test");
-    }//to use getElementsByClassName, use forloop to give to each occurence of class name
-
-//document.getElementById("disp").innerHTML= display;
-
-/*$('.calcNum').click(function(id) {
-//var display=document.getElementsByClassName('calcNum').innerHTML;
- document.getElementById("disp").innerHTML = display;
-});*/
+for (var i = 0; i < classname.length; i++) {
+    classname[i].addEventListener('click', myFunction);
+}
 
