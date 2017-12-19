@@ -13,8 +13,8 @@
             <button type = "button" class="btn btn-primary btn-block" id="disp"></button>
 		<div class = "row">
 		    <div class="btn-group-lg">
-                <button type="button" class="btn btn-primary" id = "clear">C</button>
-                <button type="button" class="btn btn-primary " id = "ce">CE</button>
+                <button type="button" class="btn btn-primary" id = "clear" onclick = "clearDisplay()">C</button>
+                <button type="button" class="btn btn-primary " id = "ce" onclick = "clearAll()">CE</button>
                 <button type="button" class="btn btn-primary calcNum" id = "decimal" value = ".">.</button>
                 <button type="button" class="btn btn-primary" id="divide">/</button>
             </div>
@@ -40,13 +40,13 @@
                 <button type="button" class="btn btn-primary calcNum" value ="1">1</button>
                 <button type="button" class="btn btn-primary calcNum" value ="2">2</button>
                 <button type="button" class="btn btn-primary calcNum" value ="3">3</button>
-                <button type="button" class="btn btn-primary" id ="add">+</button>
+                <button type="button" class="btn btn-primary" id ="add" onclick = "add()">+</button>
             </div>
         </div>
         <div class = "row">
             <div class="btn-group-lg">
                 <button type="button" class="btn btn-primary calcNum" value = 0>0</button>
-                <button type="button" class="btn btn-primary">=</button>
+                <button type="button" class="btn btn-primary" id = "eq" onclick = "equals()">=</button>
             </div>
         </div>
 	</div>
