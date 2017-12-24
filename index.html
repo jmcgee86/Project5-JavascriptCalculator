@@ -10,13 +10,13 @@
 </head>
 <body>
     <div class = "container" id="calc">
-            <button type = "button" class="btn btn-primary btn-block" id="disp"></button>
+            <button type = "button" class="btn btn-primary btn-block" id="disp">0</button>
 		<div class = "row">
 		    <div class="btn-group-lg">
                 <button type="button" class="btn btn-primary" id = "clear" onclick = "clearDisplay()">C</button>
                 <button type="button" class="btn btn-primary " id = "ce" onclick = "clearAll()">CE</button>
                 <button type="button" class="btn btn-primary calcNum" id = "decimal" value = ".">.</button>
-                <button type="button" class="btn btn-primary" id="divide">/</button>
+                <button type="button" class="btn btn-primary operators" id="divide" value = "divide">/</button>
             </div>
         </div>
         <div class = "row">
@@ -24,7 +24,7 @@
                 <button type="button" class="btn btn-primary calcNum" value = "7" id ="7">7</button>
                 <button type="button" class="btn btn-primary calcNum" value ="8">8</button>
                 <button type="button" class="btn btn-primary calcNum" value ="9">9</button>
-                <button type="button" class="btn btn-primary calcNum" id ="multiply">x</button>
+                <button type="button" class="btn btn-primary operators" id ="multiply" value = "multiply">x</button>
             </div>
         </div>
         <div class = "row">
@@ -32,7 +32,7 @@
                 <button type="button" class="btn btn-primary calcNum" value ="4">4</button>
                 <button type="button" class="btn btn-primary calcNum" value ="5">5</button>
                 <button type="button" class="btn btn-primary calcNum" value ="6">6</button>
-                <button type="button" class="btn btn-primary" id ="subtract">-</button>
+                <button type="button" class="btn btn-primary operators" id ="subtract" value = "subtract">-</button>
             </div>
         </div>
         <div class = "row">
@@ -40,7 +40,7 @@
                 <button type="button" class="btn btn-primary calcNum" value ="1">1</button>
                 <button type="button" class="btn btn-primary calcNum" value ="2">2</button>
                 <button type="button" class="btn btn-primary calcNum" value ="3">3</button>
-                <button type="button" class="btn btn-primary" id ="add" onclick = "add()">+</button>
+                <button type="button" class="btn btn-primary operators" value = "add" id ="add">+</button>
             </div>
         </div>
         <div class = "row">
