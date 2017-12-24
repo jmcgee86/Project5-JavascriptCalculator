@@ -4,6 +4,7 @@ var display = document.getElementById("disp");
 var allInputs = [];
 var numInput = 0;
 var runningTotal = 0;
+var memory = 0;
 var numberClick = function() {
 	var numVal = this.value;
 	if (numInput == 0) {
@@ -61,3 +62,12 @@ document.getElementById("clear").addEventListener('click', function() {
 	numInput = 0;
 	display.innerHTML = runningTotal;
 });
+
+document.getElementById("MA").addEventListener('click', function(){
+	if (runningTotal == 0){
+		memory = parseFloat(numInput)
+	}
+	else{
+	memory += parseFloat(runningTotal);
+	}
+})
