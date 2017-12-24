@@ -10,11 +10,11 @@
 </head>
 <body>
     <div class = "container" id="calc">
-            <button type = "button" class="btn btn-primary btn-block" id="disp">0</button>
+            <button type = "button" class="btn btn-primary btn-block" id="disp">0<span id ="currentOp"></span></button>
 		<div class = "row">
 		    <div class="btn-group-lg">
-                <button type="button" class="btn btn-primary" id = "clear" onclick = "clearDisplay()">C</button>
-                <button type="button" class="btn btn-primary " id = "ce" onclick = "clearAll()">CE</button>
+                <button type="button" class="btn btn-primary" id = "clear">C</button>
+                <button type="button" class="btn btn-primary " id = "ce">CE</button>
                 <button type="button" class="btn btn-primary calcNum" id = "decimal" value = ".">.</button>
                 <button type="button" class="btn btn-primary operators" id="divide" value = "divide">/</button>
             </div>
@@ -46,7 +46,7 @@
         <div class = "row">
             <div class="btn-group-lg">
                 <button type="button" class="btn btn-primary calcNum" value = 0>0</button>
-                <button type="button" class="btn btn-primary" id = "eq" onclick = "equals()">=</button>
+                <button type="button" class="btn btn-primary" id = "eq">=</button>
             </div>
         </div>
 	</div>
