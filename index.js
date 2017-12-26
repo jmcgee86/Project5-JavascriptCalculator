@@ -70,4 +70,14 @@ document.getElementById("MA").addEventListener('click', function(){
 	else{
 	memory += parseFloat(runningTotal);
 	}
+	//display = runningTotal;
+})
+
+document.getElementById("MS").addEventListener('click', function(){
+	memory -= parseFloat(numInput);
+	//display = runningTotal;
+})
+
+document.getElementById("MC").addEventListener('click', function(){
+	memory = parseFloat(0);
 })
