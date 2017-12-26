@@ -22,6 +22,10 @@ var operatorClick = function() {
 
 function equals() {
 	allInputs.push(numInput);
+	document.getElementById("add").style.background = "blue";
+	document.getElementById("subtract").style.background = "blue";
+	document.getElementById("multiply").style.background = "blue";
+	document.getElementById("divide").style.background = "blue";
 	for (var i = 0; i < allInputs.length; i++) {
 		if (allInputs[i] == "add") {
 			runningTotal += parseFloat(allInputs[i + 1], 10);
@@ -56,6 +60,10 @@ document.getElementById("ce").addEventListener('click', function() {
 	numInput = 0;
 	runningTotal = 0;
 	display.innerHTML = 0;
+	document.getElementById("add").style.background = "blue";
+	document.getElementById("subtract").style.background = "blue";
+	document.getElementById("multiply").style.background = "blue";
+	document.getElementById("divide").style.background = "blue";
 });
 document.getElementById("eq").addEventListener('click', equals);
 document.getElementById("clear").addEventListener('click', function() {
@@ -85,4 +93,32 @@ document.getElementById("MC").addEventListener('click', function(){
 document.getElementById("MR").addEventListener('click', function(){
 	numInput = parseFloat(memory);
 	display.innerHTML = numInput;
+})
+
+document.getElementById("add").addEventListener('click', function(){
+	document.getElementById("add").style.background = "red";
+	document.getElementById("subtract").style.background = "blue";
+	document.getElementById("multiply").style.background = "blue";
+	document.getElementById("divide").style.background = "blue";
+})
+
+document.getElementById("subtract").addEventListener('click', function(){
+		document.getElementById("subtract").style.background = "red";
+		document.getElementById("add").style.background = "blue";
+		document.getElementById("multiply").style.background = "blue";
+		document.getElementById("divide").style.background = "blue"
+})
+
+document.getElementById("multiply").addEventListener('click', function(){
+	document.getElementById("multiply").style.background = "red";
+	document.getElementById("subtract").style.background = "blue";
+	document.getElementById("add").style.background = "blue";
+	document.getElementById("divide").style.background = "blue";
+})
+
+document.getElementById("divide").addEventListener('click', function(){
+	document.getElementById("divide").style.background = "red";
+	document.getElementById("subtract").style.background = "blue";
+	document.getElementById("multiply").style.background = "blue";
+	document.getElementById("add").style.background = "blue";
 })

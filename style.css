@@ -31,3 +31,23 @@
     background-color: lightgrey;
     margin: auto;
 }
+
+#disp{
+    color: black;
+    text-align: right;
+}
+.calcNum{
+    background-color: blue;
+}
+
+.operators{
+    background-color: blue;
+}
+
+.memory{
+    background-color: blue ;
+}
+
+.otherBtns{
+    background-color: blue;
+}
