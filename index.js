@@ -81,3 +81,8 @@ document.getElementById("MS").addEventListener('click', function(){
 document.getElementById("MC").addEventListener('click', function(){
 	memory = parseFloat(0);
 })
+
+document.getElementById("MR").addEventListener('click', function(){
+	numInput = parseFloat(memory);
+	display.innerHTML = numInput;
+})
